@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital@0;1&family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:url("./assets/Scrabble.jpg");
+}
+
+.container{
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.score{
+   position: absolute;
+   top:16%;
+   left:35%;
+   color:#1640D6;
+   font-size: 25px;
+   font-weight:800;
+}
+
+.high-score{
+    position:absolute;
+    top: 16%;
+    right:35%;
+    color: red;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+
+.container h2{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.container .content{
+    margin: 25px 20px 35px;
+}
+
+.content .word{
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 24px;
+    margin-right: -24px;
+}
+
+.content .details{
+    margin: 25px 0 20px ;
+}
+
+.details p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b{
+    font-weight: 500;
+}
+
+.content input{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 18px;
+    padding: 0 16px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+}
+
+.design{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.content .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button{
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100%/2 - 8px);
+}
+
+.buttons .refresh-word{
+    background:#6c757d;
+}
+ .buttons .check-word{
+    background: #5372f0;
+ }
+
+ 
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; 
+    }
+
+    .score,
+    .high-score {
+        font-size: 20px; 
+        top: 14%; 
+        text-align: center; /* Center the text */
+        margin: 10px auto; /* Add margin to separate elements */
+        width: 80%; /* Limit width */
+    }
+
+    .content .word {
+        font-size: 25px; /* Adjust font size for the word */
+        letter-spacing: 18px; /* Adjust letter spacing */
+        margin-right: -18px;
+    }
+
+    .content input {
+        height: 50px; /* Adjust input height */
+        font-size: 16px; /* Adjust font size for input */
+    }
+
+    .buttons button {
+        padding: 12px 0; /* Adjust padding for buttons */
+        font-size: 15px; /* Adjust font size for buttons */
+    }
+}
+
+
+ 

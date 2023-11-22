@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital@0;1&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background:#2B3499;
+}
+
+.comment{
+    display: flex;
+    justify-content: center;
+   margin-top: 50px;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crown{
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+button{
+    position: absolute;
+    left: 45%;
+    bottom:5%;
+    width: 150px;
+    height: 50px;
+    background:#5372f0;
+    color: #fff;
+    font-size:1.5rem;
+    border-radius:7px;
+    
+}
+.reset {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+@media (max-width: 600px) {
+    .comment {
+        font-size: 2rem; 
+    }
+
+    .game,
+    .crown {
+        margin-top: 30px; 
+    }
+
+    button {
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+}
