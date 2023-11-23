@@ -179,6 +179,7 @@ const words = [
             alert(`Times up! ${correctWord.toUpperCase()} was the correct word`)
             if(maxTime===0){
                 location.href ="./result.html?score=" + score;
+                var scoreValue = localStorage.setItem("score", score);
             }
             initGame();
         },1000);
@@ -203,6 +204,26 @@ const words = [
         
     }
     initGame();
+
+    const wordCheck = () =>{
+        let userWord = inputField.value.toLocaleLowerCase();
+        if(userWord!==correctWord) return alert(`Oops! ${userWord} is not a correct word`);
+        alert(`Congrats! ${userWord} is a correct word`)
+
+        if(userWord===correctWord){
+            score++;
+
+            highscore = score>=highscore? score:highscore;
+        localStorage.setItem("high-score",highscore);
+        scoreElement.innerText = `Score:${score}`;
+        highscoreElement.innerText = `High score:${highscore}`;
+        }
+
+         
+
+        initGame();
+       
+    }
     
     const checkWord = () =>{
         let userWord = inputField.value.toLocaleLowerCase();
@@ -219,6 +240,16 @@ const words = [
         highscoreElement.innerText = `High score:${highscore}`;
         }
 
+         
+inputField.addEventListener("keypress", function(event) {
+    
+    if (event.key === "Enter") {
+     
+      wordCheck();
+    }
+  });
+ 
+
     
         
 
@@ -226,10 +257,9 @@ const words = [
         initGame();
 
         
-        
-        
-    }
-    
+
+}
+       
     
     refreshBtn.addEventListener("click", initGame);
     checkBtn.addEventListener("click", checkWord);
