@@ -91,6 +91,12 @@ body{
     right: 10px;
 }
 
+.home{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
 .content .buttons{
     display: flex;
     justify-content: space-between;
@@ -125,7 +131,7 @@ body{
     .score,
     .high-score {
         font-size: 20px; 
-        top: 14%; 
+        top:75px; 
         text-align: center; /* Center the text */
         margin: 10px auto; /* Add margin to separate elements */
         width: 80%; /* Limit width */
