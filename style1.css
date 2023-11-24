@@ -22,25 +22,6 @@ body{
     margin: 10px;
 }
 
-.score{
-   position: absolute;
-   top:16%;
-   left:35%;
-   color:#1640D6;
-   font-size: 25px;
-   font-weight:800;
-}
-
-.high-score{
-    position:absolute;
-    top: 16%;
-    right:35%;
-    color: red;
-    font-size: 25px;
-    font-weight: 800;
-}
-
-
 
 .container h2{
     font-size: 25px;
@@ -91,6 +72,31 @@ body{
     right: 10px;
 }
 
+.game-details{
+    position: absolute;
+    right:100px;
+    border-radius: 7px;
+    color:#000;
+    font-size: 2rem;
+    height:210px;
+    width: 250px;
+    background:#fff;
+    font-family: 'Poppins';
+    
+}
+
+.game-details .score{
+    display: block;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.game-details .high-score{
+    display: block;
+    margin-top:30px;
+    margin-left: 20px;
+}
+
 .home{
     position: absolute;
     top: 5px;
@@ -122,7 +128,7 @@ body{
 
  
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
     .container {
         width: 80%; 
@@ -132,27 +138,62 @@ body{
     .high-score {
         font-size: 20px; 
         top:75px; 
-        text-align: center; /* Center the text */
-        margin: 10px auto; /* Add margin to separate elements */
-        width: 80%; /* Limit width */
+        text-align: center; 
+        margin: 10px auto; 
+        width: 80%; 
     }
 
     .content .word {
-        font-size: 25px; /* Adjust font size for the word */
-        letter-spacing: 18px; /* Adjust letter spacing */
+        font-size: 25px; 
+        letter-spacing: 18px;
         margin-right: -18px;
     }
 
     .content input {
-        height: 50px; /* Adjust input height */
-        font-size: 16px; /* Adjust font size for input */
+        height: 50px; 
+        font-size: 16px;
     }
 
     .buttons button {
-        padding: 12px 0; /* Adjust padding for buttons */
-        font-size: 15px; /* Adjust font size for buttons */
+        padding: 12px 0; 
+        font-size: 15px; 
+    }
+    
+    
+
+
+@media (max-width: 768px) {
+    
+
+    .container {
+        
+        position: relative; 
+    }
+
+    .game-details {
+        
+        position: absolute; 
+        top: 100%; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 80%; 
+        max-width: 300px;
+        margin: 20px auto; 
+        height: auto; 
+        text-align: center; 
+        font-size: 16px; 
+    }
+
+    .game-details .score,
+    .game-details .high-score {
+        
+        display: block;
+        margin: 10px auto; 
     }
 }
+
+}
+
 
 
  
