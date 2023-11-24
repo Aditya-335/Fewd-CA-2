@@ -150,7 +150,91 @@ const words = [
         word: "wonder",
         hint: "Feeling of amazement or admiration"
     },
+    {
+        word: "spectrum",
+        hint: "Range of colors or ideas"
+    },
+    {
+        word: "illusion",
+        hint: "Deceptive appearance or misleading impression"
+    },
     
+    {
+        word: "voyage",
+        hint: "Long journey, especially by sea or space"
+    },
+    
+    {
+        word: "nostalgia",
+        hint: "Sentimental longing for the past"
+    },
+    
+    {
+        word: "labyrinth",
+        hint: "A complex and confusing network of passages"
+    },
+    {
+        word: "conundrum",
+        hint: "A confusing and difficult problem or question"
+    },
+    
+    {
+        word: "bright",
+        hint: "Radiating or reflecting light; shining"
+    },
+    {
+        word: "forgetful",
+        hint: "Prone to forgetting or not remembering easily"
+    },
+    {
+        word: "fragrance",
+        hint: "A pleasant, sweet smell"
+    },
+    {
+        word: "glimmer",
+        hint: "Faint or unsteady light"
+    },
+    
+    {
+        word: "luminous",
+        hint: "Radiating light; full of light"
+    },
+    {
+        word: "marvel",
+        hint: "Something that causes wonder or astonishment"
+    },
+    {
+        word: "gleaming",
+        hint: "Shining brightly, especially with reflected light"
+    },
+    {
+        word: "enigma",
+        hint: "A puzzling or inexplicable occurrence or situation"
+    },
+    {
+        word: "vivid",
+        hint: "Bright, distinct, and clear"
+    },
+    {
+        word: "radiant",
+        hint: "Sending out light or heat; shining brightly"
+    },
+    {
+        word: "melody",
+        hint: "Tune or sequence of musical notes"
+    },
+    {
+        word: "enchanted",
+        hint: "Under a spell or charmed"
+    },
+    {
+        word: "serene",
+        hint: "Calm, peaceful, or tranquil"
+    },
+    {
+        word: "cascade",
+        hint: "Small waterfall or series of stages"
+    },
     
 
     ]
@@ -207,8 +291,7 @@ const words = [
 
     const wordCheck = () =>{
         let userWord = inputField.value.toLocaleLowerCase();
-        if(userWord!==correctWord) return alert(`Oops! ${userWord} is not a correct word`);
-        alert(`Congrats! ${userWord} is a correct word`)
+        
 
         if(userWord===correctWord){
             score++;
@@ -227,9 +310,7 @@ const words = [
     
     const checkWord = () =>{
         let userWord = inputField.value.toLocaleLowerCase();
-        if(!userWord)return alert("Please enter a word")
-        if(userWord!==correctWord) return alert(`Oops! ${userWord} is not a correct word`);
-        alert(`Congrats! ${userWord} is a correct word`)
+        
 
         if(userWord===correctWord){
             score++;
