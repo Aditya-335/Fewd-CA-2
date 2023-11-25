@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         localStorage.getItem("username");
         localStorage.getItem("nickname");
+        console.log(nickname)
         
 
         // Redirect to the instruction page (or perform any other action)
