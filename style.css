@@ -32,6 +32,7 @@ body{
 
 
 #submit{
+    padding-top:7px;
     cursor: pointer;
     width: 150px;
     height: 50px;
