@@ -298,7 +298,7 @@ const initGame = () => {
 // Function to check if the word entered by the user is correct
 const wordCheck = () => {
   let userWord = inputField.value.toLowerCase();
-  if(!userWord)return alert("Please enter a word")
+ 
 
 
   if (userWord === correctWord) {
@@ -315,6 +315,7 @@ const wordCheck = () => {
 // Function to handle checking the word when the 'Enter' key is pressed
 const checkWord = () => {
   let userWord = inputField.value.toLowerCase();
+   if(!userWord)return alert("Please enter a word");
 
   if (userWord === correctWord) {
       score++; // Increment score for correct answer
