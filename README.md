@@ -34,20 +34,20 @@ Link-https://fonts.google.com/specimen/Poppins
 
 Home Page-
 
-![Alt text](<Screenshot 2023-11-25 093424-1.png>)
+![Screenshot 2023-11-25 093424](https://github.com/Kalvian2/Fewd-CA-2/assets/143924501/76fbcd73-f777-46a8-af43-6f84c3de7437)
+
 
 Instructions Page-
 
-![Alt text](<Screenshot 2023-11-25 094116.png>)
+![Screenshot 2023-11-25 094116](https://github.com/Kalvian2/Fewd-CA-2/assets/143924501/dd3cc59b-e3f6-4151-b2c8-71162f31b5ab)
 
 Game page-
 
-![Alt text](<Screenshot 2023-11-25 094143.png>)
+![Screenshot 2023-11-25 094143](https://github.com/Kalvian2/Fewd-CA-2/assets/143924501/5fe5782d-f2f1-444d-b451-b679ad246f95)
 
 Result page-
 
-![Alt text](<Screenshot 2023-11-25 094221.png>)
-
+![Screenshot 2023-11-25 094221](https://github.com/Kalvian2/Fewd-CA-2/assets/143924501/76f2b559-35bd-42b3-ade2-3ed903ac9396)
 
 
 
