@@ -333,7 +333,11 @@ inputField.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
       wordCheck(); // Invoke the wordCheck function
   }
+
+  
 });
 
 // Initialize the game when the page loads
 initGame();
+//Adding functionality to refresh button
+refreshBtn.addEventListener("click", initGame);
